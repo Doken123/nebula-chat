@@ -1,0 +1,8 @@
+node_modules/
+nebulachat.db
+nebulachat.db-shm
+nebulachat.db-wal
+.env
+.vercel
+.DS_Store
+*.log
