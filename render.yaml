@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: nebulachat-backend
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        value: https://placeholder.vercel.app
+      - key: NODE_VERSION
+        value: 20.11.0
+    disk:
+      name: nebulachat-data
+      mountPath: /data
+      sizeGB: 1
