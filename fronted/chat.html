@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NebulaChat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="my-profile">
+      <div class="avatar" id="myAvatar">?</div>
+      <div>
+        <h3 id="myName">...</h3>
+        <small id="logoutBtn">Keluar</small>
+      </div>
+    </div>
+    <input type="text" id="searchUser" placeholder="🔍 Cari pengguna...">
+    <div class="user-list" id="userList"></div>
+  </aside>
+
+  <main class="chat-area">
+    <div class="chat-header" id="chatHeader">
+      <span>Pilih pengguna untuk mulai chat</span>
+    </div>
+    <div class="chat" id="chat"></div>
+    <div class="input-area">
+      <input type="text" id="input" placeholder="Tulis pesan..." autocomplete="off" disabled>
+      <button class="send-btn" id="send" disabled>➤</button>
+    </div>
+  </main>
+</div>
+
+<script src="config.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>
